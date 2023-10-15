@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+}
+
+h1{
+    color:darkgreen;
+}
+
+.username{
+    text-decoration: underline;
+}
+
+.password{
+    text-decoration: underline;
+}
+
+.button{
+    background-color: black;
+    color: beige;
+}
