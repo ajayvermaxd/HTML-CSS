@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #555151;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+.content{
+    background-image: url("https://im.whatshot.in/img/2022/Mar/chaap-place-1648617874.jpg");
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            color: white;
+        
+}
+#imagepara{ 
+			margin-top: 200px;
+            font-size: 50px;
+		}
+
+.xyz{
+    display: inline;
+}
+
+h1{
+    text-align: center;
+}     
+
+.container{
+    text-align: center;
+    
+}
+
+.contact{
+    
+    display: inline-block;
+    width: 30%;
+    border: solid rgb(228, 222, 222);;
+    box-sizing: border-box;
+    background-color:rgb(228, 222, 222);;
+    color:black;
+    height: 200px;
+    margin: 15px;
+    
+
+}
+
+
+.sociali{
+    color: black;
+    margin: -10px;
+
+}
