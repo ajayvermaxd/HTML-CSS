@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dashboard{
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-columns: 100px 100px 100px; */
+            grid-template-rows: 100px auto;
+            /* grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); */
+            gap: 20px;
+            max-width: 400px;
+            
+        }
+        .widget {
+            margin: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="dashboard">
+        <div class="widget">Widget 1</div>
+        <div class="widget">Widget 2</div>
+        <div class="widget">Widget 3</div>
+        <div class="widget">Widget 4</div>
+        <div class="widget">Widget 5</div>
+        <div class="widget">Widget 6</div>
+           </div>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 5px; 
+        }
+        .grid-item {
+            background-color: lightgray;
+            border: 1px solid gray; 
+            text-align: center;
+            padding: 10px; 
+
+        }
+        .widget{
+            background-color: lightgray;
+            border: 1px solid gray; 
+            text-align: center;
+            padding: 10px; 
+        }
+        .fa-eye {
+            background-color: green;
+        }
+
+        .fa--edit {
+            background-color: blue;
+        }
+
+        .fa-trash-alt {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Last Appointment</h1>
+   
+    <div class="grid-container">
+        
+        <div class="widget">Name</div>
+        <div class="widget">Dr. Name</div>
+        <div class="widget"> Condition</div>
+        <div class="widget">Action</div>
+        <div class="grid-item">Chintu</div>
+        <div class="grid-item">Dr X</div>
+        <div class="grid-item">Cold</div>
+        <div class="grid-item>">
+            <i class="far fa-eye"></i>
+            <i class="far fa-edit"></i>
+            <i class="far fa-trash-alt"></i></div>
+        <div class="grid-item">Mintu</div>
+        <div class="grid-item">Dr Y</div>
+        <div class="grid-item">Fever</div>
+        <div class="grid-item>">
+            <i class="far fa-eye"></i>
+            <i class="far fa-edit"></i>
+            <i class="far fa-trash-alt"></i></div>
+        <div class="grid-item">Pintu</div>
+        <div class="grid-item">Dr Z</div>
+        <div class="grid-item">Cough</div>
+        <div class="grid-item>">
+            <i class="far fa-eye"></i>
+            <i class="far fa-edit"></i>
+            <i class="far fa-trash-alt"></i></div>
+    </div>
+</body>
+
+</html>
