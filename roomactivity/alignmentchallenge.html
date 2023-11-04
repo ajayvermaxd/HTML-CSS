@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brick Structure</title>
+  <style>
+    /* Container for each row */
+    .row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    /* General brick styling */
+    .brick {
+      background-color: rgb(11, 172, 201); /* Lime blue color */
+      color: white;
+      text-align: left;
+      position: relative;
+      flex-grow: 1;
+      margin: 2px;
+    }
+
+    /* Nested brick styling */
+    .nested .brick {
+      background-color: rgb(234, 186, 186); /* Red color */
+    }
+
+    /* Number styling */
+    .brick .number {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 30px;
+    }
+
+    /* First row brick styling */
+    .row1 .brick {
+      height: 180px;
+    }
+
+    /* Second row brick styling */
+    .row2 .brick, .nested .row2 .brick {
+      height: 40px;
+    }
+
+    /* Third row brick styling */
+    .row3 .brick, .nested .row3 .brick {
+      height: 40px;
+    }
+
+    /* Align nested rows at the bottom of the 1st brick */
+    .brick > .nested {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First row -->
+  <div class="row row1">
+    <div class="brick">
+      <span class="number">1</span>
+      <!-- Nested rows inside 1st brick -->
+      <div class="nested">
+        <div class="row row3">
+          <div class="brick"><span class="number">1</span></div>
+          <div class="brick"><span class="number">2</span></div>
+          <div class="brick"><span class="number">3</span></div>
+        </div>
+        <div class="row row2">
+          <div class="brick"><span class="number">1</span></div>
+          <div class="brick"><span class="number">2</span></div>
+          <div class="brick"><span class="number">3</span></div>
+          <div class="brick"><span class="number">4</span></div>
+        </div>
+        <div class="row row3">
+          <div class="brick"><span class="number">1</span></div>
+          <div class="brick"><span class="number">2</span></div>
+          <div class="brick"><span class="number">3</span></div>
+          <div class="brick"><span class="number">4</span></div>
+          <div class="brick"><span class="number">5</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="brick"><span class="number">2</span></div>
+    <div class="brick"><span class="number">3</span></div>
+  </div>
+
+  <!-- Second row -->
+  <div class="row row2">
+    <div class="brick"><span class="number">1</span></div>
+    <div class="brick"><span class="number">2</span></div>
+    <div class="brick"><span class="number">3</span></div>
+    <div class="brick"><span class="number">4</span></div>
+  </div>
+
+  <!-- Third row -->
+  <div class="row row3">
+    <div class="brick"><span class="number">1</span></div>
+    <div class="brick"><span class="number">2</span></div>
+    <div class="brick"><span class="number">3</span></div>
+    <div class="brick"><span class="number">4</span></div>
+    <div class="brick"><span class="number">5</span></div>
+  </div>
+
+</body>
+</html>
